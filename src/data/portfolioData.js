@@ -17,10 +17,10 @@ export const portfolioData = {
         location: "Pathanamthitta, Kerala, India",          // 👈 Your location
 
         // Profile Image - Place your image in the 'public' folder
-        profileImage: "/profile.jpeg",              // 👈 Path to your profile image
+        profileImage: import.meta.env.BASE_URL + "profile.jpeg",              // 👈 Path to your profile image
 
         // Resume - Place your resume PDF in the 'public' folder
-        resumeLink: "/resume.pdf",                 // 👈 Path to your resume
+        resumeLink: import.meta.env.BASE_URL + "resume.pdf",                 // 👈 Path to your resume
 
         // Social Links
         social: {
@@ -89,9 +89,9 @@ export const portfolioData = {
             title: "Portfolio",                           // 👈 Project title
             description: "A clean, minimalist portfolio website designed to showcase my skills, projects, and certifications. Built with React and Vite for a fast, responsive experience.",
             techStack: ["React", "Vite", "CSS"],        // 👈 Technologies used
-            liveLink: "https://project-demo.com",              // 👈 Live demo URL (or "" if none)
+            liveLink: "https://karthikp-04.github.io/portfolio/",              // 👈 Live demo URL (or "" if none)
             githubLink: "https://github.com/karthikp-04/portfolio", // 👈 GitHub repo URL
-            image: "/project1.png"                             // 👈 Project screenshot (place in public folder)
+            image: import.meta.env.BASE_URL + "project1.png"                             // 👈 Project screenshot (place in public folder)
         },
         {
             title: "MARINA",
@@ -99,7 +99,7 @@ export const portfolioData = {
             techStack: ["Python", "Java", "SUMO+TAPAS", "TensorFlow"],
             liveLink: "",
             githubLink: "https://github.com/karthikp-04/MARINA",
-            image: "/project2.png"
+            image: import.meta.env.BASE_URL + "project2.png"
         },
         {
             title: "Project Name 3",
@@ -107,7 +107,7 @@ export const portfolioData = {
             techStack: ["Java", "Spring Boot", "MySQL"],
             liveLink: "https://project3-demo.com",
             githubLink: "https://github.com/username/project3",
-            image: "/project3.png"
+            image: import.meta.env.BASE_URL + "project3.png"
         }
         // 👈 Add more projects by copying the object structure above
     ],
