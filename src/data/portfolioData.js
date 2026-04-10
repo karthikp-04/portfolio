@@ -102,11 +102,12 @@ export const portfolioData = {
             image: import.meta.env.BASE_URL + "project2.png"
         },
         {
-            title: "Project Name 3",
-            description: "Third project description. Highlight any interesting technical challenges you overcame.",
-            techStack: ["Java", "Spring Boot", "MySQL"],
-            liveLink: "https://project3-demo.com",
-            githubLink: "https://github.com/username/project3",
+
+            title: "Impact of Weather Conditions on Sales",
+            description: "A business analytics project analyzing how weather factors like temperature, rainfall, and seasonality influence retail sales. Built using Python, the project integrates real-world weather data with historical grocery sales to uncover patterns through EDA, statistical testing, and OLS regression. It also features an interactive dashboard for visualizing insights and supporting data-driven decision making.",
+            techStack: ["Python", "Pandas", "Matplotlib", "Seaborn", "Statsmodels", "Chart.js"],
+            liveLink: "https://karthikp-04.github.io/BA-Winter_25-26_Team-8_Insight_Architects/dashboard/",
+            githubLink: "https://github.com/karthikp-04/BA-Winter_25-26_Team-8_Insight_Architects",
             image: import.meta.env.BASE_URL + "project3.png"
         }
         // 👈 Add more projects by copying the object structure above
