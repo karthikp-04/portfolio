@@ -20,7 +20,7 @@ export const portfolioData = {
         profileImage: import.meta.env.BASE_URL + "profile.jpeg",              // 👈 Path to your profile image
 
         // Resume - Place your resume PDF in the 'public' folder
-        resumeLink: import.meta.env.BASE_URL + "resume.pdf",                 // 👈 Path to your resume
+        resumeLink: import.meta.env.BASE_URL + "resume.docx",                 // 👈 Path to your resume
 
         // Social Links
         social: {
