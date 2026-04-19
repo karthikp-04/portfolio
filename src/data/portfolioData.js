@@ -20,7 +20,7 @@ export const portfolioData = {
         profileImage: import.meta.env.BASE_URL + "profile.jpeg",              // 👈 Path to your profile image
 
         // Resume - Place your resume PDF in the 'public' folder
-        resumeLink: import.meta.env.BASE_URL + "resume.docx",                 // 👈 Path to your resume
+        resumeLink: import.meta.env.BASE_URL + "resume.pdf",                 // 👈 Path to your resume
 
         // Social Links
         social: {
@@ -86,11 +86,11 @@ export const portfolioData = {
     // ===================
     projects: [
         {
-            title: "Portfolio",                           // 👈 Project title
-            description: "A clean, minimalist portfolio website designed to showcase my skills, projects, and certifications. Built with React and Vite for a fast, responsive experience.",
-            techStack: ["React", "Vite", "CSS"],        // 👈 Technologies used
-            liveLink: "https://karthikp-04.github.io/portfolio/",              // 👈 Live demo URL (or "" if none)
-            githubLink: "https://github.com/karthikp-04/portfolio", // 👈 GitHub repo URL
+            title: "StockSense AI — Hybrid Stock Predictor",   // 👈 Project title
+            description: "A full-stack stock prediction platform combining FinBERT-based news sentiment analysis with technical indicators like RSI, MACD, and Moving Average crossover. Uses dynamic weighting (70% sentiment / 30% technical or 100% technical) to generate BUY/SELL/HOLD signals with confidence scores, displayed through an interactive React dashboard with real-time data and watchlist management.",
+            techStack: ["React", "Vite", "FastAPI", "Python", "Transformers (FinBERT)", "yfinance", "NumPy", "Pandas", "Recharts", "NewsAPI", "Finnhub"],     // 👈 Technologies used
+            liveLink: "",              // 👈 Live demo URL (or "" if none)
+            githubLink: "https://github.com/karthikp-04/Stock-Price-Predictor-with-News-Sentiment", // 👈 GitHub repo URL
             image: import.meta.env.BASE_URL + "project1.png"                             // 👈 Project screenshot (place in public folder)
         },
         {
