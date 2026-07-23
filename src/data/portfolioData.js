@@ -141,7 +141,7 @@ export const portfolioData = {
             degree: "Bachelor of Technology in Computer Science",    // 👈 Degree name
             duration: "2023 - 2027",                                 // 👈 Start - End year
             location: "Coimbatore, Tamil Nadu",                                 // 👈 Location
-            gpa: "7.13 / 10",                                         // 👈 GPA/CGPA (optional, "" to hide)
+            gpa: "7.11 / 10",                                         // 👈 GPA/CGPA (optional, "" to hide)
             coursework: [
                 "Data Structures & Algorithms",
                 "Database Management Systems",
