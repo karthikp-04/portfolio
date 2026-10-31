@@ -10,22 +10,28 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <span className="footer-logo">{personal.name.split(' ')[0]}</span>
-                        <p>Building digital experiences with passion and precision.</p>
+                        <span className="footer-logo">
+                            <span className="logo-bracket">&lt;</span>
+                            {personal.name}
+                            <span className="logo-slash">/&gt;</span>
+                        </span>
+                        <p>Computer Science & Engineering Student passionate about Data Engineering, Machine Learning, and Full-Stack Architectures.</p>
                     </div>
 
                     <div className="footer-links">
-                        <h4>Quick Links</h4>
+                        <h4>Navigation</h4>
                         <nav>
                             <a href="#about">About</a>
                             <a href="#skills">Skills</a>
                             <a href="#projects">Projects</a>
+                            <a href="#certifications">Certifications</a>
+                            <a href="#education">Education</a>
                             <a href="#contact">Contact</a>
                         </nav>
                     </div>
 
                     <div className="footer-social">
-                        <h4>Connect</h4>
+                        <h4>Connect & Code</h4>
                         <div className="social-links">
                             {personal.social.github && (
                                 <a href={personal.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -54,8 +60,8 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>© {currentYear} {personal.name}. All rights reserved.</p>
-                    <p>Built with React & ❤️</p>
+                    <p>© {currentYear} {personal.name}. Crafted with React & Dark Modern Aesthetics.</p>
+                    <p className="footer-status">Designed for high-impact engineering representation</p>
                 </div>
             </div>
         </footer>

@@ -1,62 +1,97 @@
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.75rem;
 }
 
 .certification-card {
     display: flex;
-    gap: 1.25rem;
-    padding: 1.5rem;
+    gap: 1.35rem;
+    padding: 1.85rem;
+    background: var(--background-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(99, 102, 241, 0.2);
 }
 
 .cert-icon {
     flex-shrink: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--primary-bg);
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+    border: 1px solid rgba(99, 102, 241, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
+    color: var(--primary-light);
+}
+
+.cert-content {
+    flex-grow: 1;
 }
 
 .cert-content h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.4rem;
-    color: var(--text-primary);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    color: #ffffff;
+    line-height: 1.35;
 }
 
-.cert-issuer {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.25rem;
-}
-
-.cert-date {
+.cert-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 0.85rem;
     color: var(--text-muted);
     margin-bottom: 0.75rem;
 }
 
-.cert-link {
-    font-size: 0.9rem;
+.cert-issuer {
+    color: var(--primary-light);
     font-weight: 500;
-    color: var(--primary);
+}
+
+.cert-dot {
+    opacity: 0.5;
+}
+
+.cert-date {
+    color: var(--text-muted);
+}
+
+.cert-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    transition: all var(--transition-fast);
 }
 
 .cert-link:hover {
-    text-decoration: underline;
+    color: #fff;
+    transform: translateX(3px);
 }
 
 @media (max-width: 480px) {
     .certification-card {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .cert-icon {
-        margin: 0 auto;
+        align-items: flex-start;
     }
 }
